@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,::after,::before{box-sizing:border-box;-webkit-user-select:none;user-select:none}body{background-color:#4d7088;font-family:Hack, monospace;text-align:center;margin:5% auto;overflow:hidden}section{margin:auto;width:370px;height:450px;background-color:#162fc1a1;border-top-right-radius:8px;border-bottom-right-radius:8px;box-shadow:0 8px 10px #4e4e69,-1px 0 5px;cursor:grab}@media only screen and (max-width:400px){body{margin:5px;margin-top:30px}section{width:100%}}button{cursor:pointer}.ef{position:relative;cursor:pointer;color:#fff;text-transform:uppercase;text-decoration:none;letter-spacing:0.15em;display:inline-block;padding:15px 20px}.ef:after{background:none repeat scroll 0 0 transparent;bottom:0;content:"";display:block;height:2px;left:50%;position:absolute;background:#fff;transition:width 0.3s ease 0s, left 0.3s ease 0s;width:0}.ef:hover:after{width:100%;left:0}.start{font-family:Hack, monospace;background:#162fc1a1;color:#ffffff;font-size:2em;margin-top:200px;padding:1rem;border:0;transition:all 0.5s;border-radius:10px;width:auto;position:relative}.start:focus,.start:active{outline:none}.start:after{content:"˃";font-weight:400;position:absolute;left:85%;top:28%;right:5%;bottom:0;opacity:0}.start:hover{background:#2b2bff;transition:all 0.5s;border-radius:10px;box-shadow:inset 0 6px 15px #0000ff61;padding:1rem 3rem 1rem 1rem}.start:hover:after{opacity:1;transition:all 0.5s}.inDesign{position:relative;padding:15px 0 0;margin-top:10px;width:75%;height:50%;padding-top:40%;margin-left:12.5%;text-align:center}.inText{font-family:inherit;width:100%;border:0;border-bottom:2px solid gray;outline:0;font-size:1.3rem;color:white;padding:7px 0;background:transparent;transition:border-color 0.2s}.inText::placeholder{color:transparent}.inText:placeholder-shown ~ .inTextLabel{font-size:1.3rem;cursor:text;top:150px}.inTextLabel{position:absolute;top:130px;display:block;transition:0.2s;font-size:1rem;color:gray}.inText:focus ~ .inTextLabel{position:absolute;top:130px;display:block;transition:0.2s;font-size:1rem;color:#11998e;font-weight:700}.inText:focus{padding-bottom:6px;font-weight:700;border-width:3px;border-image:linear-gradient(to right, #11998e,#38ef7d);border-image-slice:1}.nxtbtn{width:180px;height:60px;cursor:pointer;background:transparent;margin-top:20%;border:1px solid transparent;outline:none;transition:.5s ease-in-out;border-radius:30px;font-size:xx-large}.nxtbtn:hover{transition:1s ease-in-out;background:#4F95DA}.nxtbtn:focus{box-shadow:0 5px 10px BLACK}input[type='date']{font-family:inherit;width:100%;border:0;border-bottom:2px solid gray;outline:0;font-size:1.3rem;color:white;padding:7px 0;background:transparent;transition:border-color 0.2s}.inpDate::-webkit-calendar-picker-indicator{color:rgb(22,145,150);opacity:1;display:block;width:20px;height:20px;border-width:thin;outline:none;cursor:pointer}.inpDate::-webkit-calendar-picker-indicator:hover{transform:scale(.8)}textarea{resize:unset;background:transparent;border-style:none;border-bottom-style:double;font-size:large;color:white}textarea::placeholder{color:white}textarea:focus{outline:0;border-color:rgb(22,145,150)}textarea::-webkit-scrollbar{width:2px;background-color:transparent}textarea::-webkit-scrollbar-thumb{border-radius:1px;background-color:#4285F4}ul{list-style:none;margin:0;text-align:left;font-size:x-large}ul li{margin:15px}[type="checkbox"]:not(:checked),[type="checkbox"]:checked{position:absolute;left:-9999px}[type="checkbox"]:not(:checked) + label,[type="checkbox"]:checked + label{position:relative;padding-left:1.95em;cursor:pointer}[type="checkbox"]:not(:checked) + label:after,[type="checkbox"]:checked + label:after{content:'\2713\0020';position:absolute;top:.15em;left:.22em;font-size:1.3em;line-height:0.8;color:#09ad7e;transition:all .2s}[type="checkbox"]:not(:checked) + label:after{opacity:0;transform:scale(0)}[type="checkbox"]:checked + label:after{opacity:1;transform:scale(1)}[type="checkbox"]:checked:focus + label:before,[type="checkbox"]:not(:checked):focus + label:before{border:2px groove transparent}[type="checkbox"]:checked ~ label{position:relative;cursor:pointer;color:#fff;text-transform:uppercase;text-decoration:none;letter-spacing:0.15em;display:inline-block}.pge{position:relative;text-align:center;width:100%;height:100%}.fold{transform-origin:left;transform-style:preserve-3d;animation:rot 1 ease-in-out 1.5s}@keyframes rot{to{transform:rotateY(270deg)}}.pge:before{content:'';position:absolute;width:4%;height:100%;left:0;background-color:#20329cde;box-shadow:inset -2px 0 3px #7c85a2, inset 10px 0 1px #22188087}.trans{-webkit-transition:2s ease-in-out;transition:2s ease-in-out;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;transform-origin:left}.container{width:96%;height:100%;margin-left:4%;position:relative;background-color:#162fc1a1;border-top-right-radius:8px;border-bottom-right-radius:8px}.face{position:relative;width:100%;height:100%;color:white;-webkit-backface-visibility:hidden;backface-visibility:hidden;border-top-right-radius:8px;border-bottom-right-radius:8px}.front{background-color:#20329cde;-webkit-backface-visibility:hidden;backface-visibility:hidden}.back{position:absolute;top:0;-webkit-backface-visibility:hidden;left:0;backface-visibility:hidden;background-color:#1f34ad;-webkit-transform:rotateY(180deg);transform:rotateY(180deg);box-shadow:-1px 0 20px rgba(0,0,0,0.582)}.fadeino{opacity:1;animation:fde 3s linear infinite}@keyframes fde{0%,100%{opacity:0}50%{opacity:1}}    
+    </style>
+</head>
+<body>
+     <section>
+
+    <div class="pge">
+
+        <div class="container trans" style="background-color:#20329cde;display:block;">
+            <div class="face front">   
+               <div>
+                    <h1 class='ef' style="font-size:xx-large">Enquiry Form</h1>   
+                    <button class="start">Start</button>
+                </div>
+            </div>
+            <div class="face back"></div>
+        </div>
+     
+        <div class="container" style="display:none">
+            <div class="face front">   
+                <div>
+                    <div class="inDesign">
+                        <input type="input" class="inText" id="inText" placeholder="Name" required />
+                        <label for="inText" class="inTextLabel">Name</label>
+                    </div>
+                        <button type="button" placeholder="Name" class='nxtbtn innamebtn' disabled>Next</button>
+                  </div>
+            </div>
+            <div class="face back"></div>
+        </div>
+
+        <div class="container" style="display:none">
+            <div class="face front"> 
+                <div>
+                    <div class="inDesign">
+                        <input type="date" class="inpDate">
+                    </div>
+                    <button type="button" class="nxtbtn datebtn" disabled>Next</button>
+                </div>
+            </div>
+            <div class="face back"></div>
+        </div>  
+        
+        <div class="container" style="display:none">
+            <div class="face front"> 
+                <div>
+                    <div class="inDesign" style="padding-top:30%;">
+                        <textarea cols="25" rows="5" placeholder="Achivements" class="textarea"></textarea>
+                    </div>
+                    <button type="button" class="nxtbtn textabtn" disabled>Next</button>
+                </div>
+            </div>
+            <div class="face back"></div>
+        </div>  
+
+        <div class="container" style="display:none">
+            <div class="face front"> 
+                <div>
+                    <div class="inDesign" style="padding-top:5%">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="noone">
+                                <label for="noone">No One</label>        
+                            </li>
+                            <li>
+                                <input type="checkbox" id="father">
+                                <label for="father">Father</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="mother">
+                                <label for="mother">Mother</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="brother">
+                                <label for="brother">Brother</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sister">
+                                <label for="sister">Sister</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="other">
+                                <label for="other">Other</label>
+                            </li>
+                        </ul>   
+                    </div>
+                    <button type="button" class="nxtbtn chebtnn" style="margin-top:10%;" disabled>Next</button>
+        
+                </div>
+            </div>
+            <div class="face back"></div>
+        </div>  
+
+        <div class="container" style="display:none">
+            <div class="face front"> 
+                <div>
+                    <div style="padding-top:30%">
+                        <p class="thnkmsg fadeino" style="display:none;">Thank you for submitting the form!</p>
+                        <button type="button" class="nxtbtn btnsubmit" style="border:1px solid #91C9FF;">Submit</button>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="face back"></div>
+        </div>  
+
+    </section>
+
+    <script>
+        (function(){const cont=document.querySelectorAll('.container'),$=function(s){"use strict";var S;const _$={s:_r=>{let a=s[0].charAt(0),r=s.substr(1);if(a=='.')S=document.getElementsByClassName(r);else if(a=='#')S=document.getElementById(r);else S=document.querySelectorAll(s);S=typeof S=='object'?S[0]:S;if(_r)return S},show:_=>{S.style.display='block';return S},event:(d,f,t=false)=>{S.addEventListener(typeof d=='string'?d:'click',f?f:typeof d=='function'?d:false,t);return S},inputDi:(i,b)=>{let a=typeof i=='string'?$(i):i,nb=typeof b=='string'?$(b).s(1):b;a.event('keyup',function(){if(this.value){nb.removeAttribute('disabled');nb.style.borderColor='#91C9FF'}else{nb.setAttribute('disabled',true);nb.style.borderColor="transparent"}})},trans:(el,nI,bI)=>{let ele=typeof el=='string'?$(el):el;ele.event('click',_=>{cont[nI].style.transform="rotateY(270deg)";let elem= window.getComputedStyle(cont[nI],null);cont[nI].addEventListener("transitionend",function(){if(elem.getPropertyValue('transform')=='matrix3d(-1.83697e-16, 0, 1, 0, 0, 1, 0, 0, -1, 0, -1.83697e-16, 0, 0, 0, 0, 1)'){cont[nI].style.display='none';cont[nI].classList.remove('trans');cont[bI].style.display='block';cont[bI].classList.add('trans')}})})}};s?_$.s():_$;return _$};$().trans('.start',0,1);$().inputDi(".inText",".innamebtn");$().trans('.innamebtn',1,2);let nb=$(".datebtn"),b=nb.s(1);$(".inpDate").s(1).onchange =_=>{b.removeAttribute('disabled');b.style.borderColor='#91C9FF'};$().trans(nb,2,3);$().inputDi(".textarea",".textabtn");$().trans(".textabtn",3,4);function checkbox(){let a=document.querySelectorAll("ul input[type='checkbox']"),l=a.length,ebtn=$(".chebtnn"),e=ebtn.s(1);for(let i=0;i<l;++i){a[i].onclick=function(){if(this.checked){e.removeAttribute('disabled');e.style.borderColor='#91C9FF'}else{let f;for(let m=0;m<l;++m){if(m!=i){if(a[m].checked){f=true;break}else f=false}}if(!f){e.setAttribute('disabled',true);e.style.borderColor="transparent"}}}}$().trans(ebtn,4,5)}checkbox();$(".btnsubmit").event('click',_=>$(".thnkmsg").show())})() 
+    </script>
+    
+</body>
+</html>
